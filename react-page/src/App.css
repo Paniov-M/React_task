@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  background-color: rgb(189, 189, 245);
+  color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Додатковий стиль для "UA | EN" */
+.right-align {
+  text-align: right;
+  font-size: 16px; /* Змінюємо розмір шрифту */
+  color: blue; /* Змінюємо колір тексту */
+}
+
+/* Виділяємо "UA" жирним шрифтом */
+.right-align .bold {
+  font-weight: bold;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.text-container {
+  display: flex;
+  align-items: center; /* Розміщуємо елементи по вертикалі по центру */
+}
+
+.best-text {
+  font-size: 24px; /* Змінюємо розмір шрифту для "Best" */
+  margin-right: 10px; /* Додаємо зазор між "Best" і "Bank" */
+}
+
+.bank-text {
+  font-size: 11px; /* Змінюємо розмір шрифту для "Bank" */
+}
+
+
+
+
+
+
+
+
+
