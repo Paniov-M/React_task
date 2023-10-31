@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  max-width: 100%; /* Зробив зображення адаптивним до ширини батьківського блока */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -44,6 +45,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  font-size: 20px; /* Змінюємо розмір шрифту */
 }
 
 /* Додатковий стиль для "UA | EN" */
@@ -58,7 +60,6 @@
   font-weight: bold;
 }
 
-
 .center {
   text-align: center;
 }
@@ -69,14 +70,72 @@
 }
 
 .best-text {
-  font-size: 24px; /* Змінюємо розмір шрифту для "Best" */
+  font-size: 25px; /* Змінюємо розмір шрифту для "Best" */
   margin-right: 10px; /* Додаємо зазор між "Best" і "Bank" */
+  font-weight: bold;
 }
 
 .bank-text {
   font-size: 11px; /* Змінюємо розмір шрифту для "Bank" */
 }
 
+.best-bank {
+  margin-right: 550px; /* Додайте бажаний відступ вправо */
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.deposit {
+  position: absolute; /* Встановлюємо позицію абсолютною */
+  bottom: 550px; /* Розташовуємо внизу блока (нижче інших елементів) */
+  left: 0; /* Вирівнюємо ліворуч */
+  color: blue; /* Змінюємо колір тексту */
+  font-weight: bold;
+  font-size: 25px; /* Змінюємо розмір шрифту */
+  left: 20px; /* Додамо відступ зліва */
+}
+
+img {
+  width: 20px; /* Задайте бажаний розмір для вашої картинки */
+  margin-right: 5px; /* Встановіть бажаний відступ між картинкою і текстом */
+}
+
+.phone {
+  display: flex;
+  align-items: center; /* Вирівнюємо центрально по горизонталі */
+  margin-left: 10px; /* Додайте бажаний відступ між текстом та зображенням */
+}
+
+.phone img {
+  max-width: 100%; /* Робимо зображення телефону адаптивним до ширини батьківського блока */
+}
+
+/* Для тексту номеру телефону */
+.phone .phone-number {
+  font-size: 16px; /* Задайте бажаний розмір шрифту */
+}
+
+/* Для блока тексту і зображення на малих екранах */
+@media (max-width: 768px) {
+  .text-container {
+    flex-direction: column; /* Змінюємо напрямок flex-контейнера на вертикальний */
+    align-items: center; /* Вирівнюємо центрально по горизонталі */
+  }
+
+  .phone {
+    text-align: center; /* Вирівнюємо текст по центру */
+  }
+
+  .phone img {
+    margin-top: 10px; /* Додайте відступ від зверху */
+  }
+
+  .phone .phone-number {
+    font-size: 14px; /* Задайте бажаний розмір шрифту для малих екранів */
+  }
+}
 
 
 
