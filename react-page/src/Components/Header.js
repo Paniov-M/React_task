@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import phoneIcon from '../Images/telephone.jpg'; // Перевірте шлях до зображення
+import phoneIcon from '../Images/telephone.jpg';
 
 function Header() {
   return (
@@ -19,6 +19,12 @@ function Header() {
         <span className="bold">UA</span> | EN
       </div>
       <div className="deposit">Внесення коштів</div>
+      <div className="gray-block">
+        {/* Сірий блок */}
+      </div>
+      <div className="white-block">
+        {/* Білий блок */}
+      </div>
     </div>
   );
 }

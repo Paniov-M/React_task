@@ -48,7 +48,7 @@
   font-size: 20px; /* Змінюємо розмір шрифту */
 }
 
-/* Додатковий стиль для "UA | EN" */
+/* Загальні стилі для "UA | EN" */
 .right-align {
   text-align: right;
   font-size: 16px; /* Змінюємо розмір шрифту */
@@ -58,6 +58,17 @@
 /* Виділяємо "UA" жирним шрифтом */
 .right-align .bold {
   font-weight: bold;
+}
+
+/* Для "UA | EN" на малих екранах */
+@media (max-width: 768px) {
+  .right-align {
+    text-align: center; /* Вирівнюємо текст по центру */
+  }
+
+  .right-align .bold {
+    font-weight: normal; /* Знімаємо жирний шрифт */
+  }
 }
 
 .center {
@@ -135,6 +146,25 @@ img {
   .phone .phone-number {
     font-size: 14px; /* Задайте бажаний розмір шрифту для малих екранів */
   }
+}
+
+.gray-block {
+  background-color: rgb(154, 150, 159);
+  width: 50%; /* Збільшимо ширину блоку на 5% */
+  height: 50%;
+  padding: 25px; /* Збільшимо відступ всередині блоку */
+  position: absolute;
+  bottom: 150px; /* Підніміть блок на 20 пікселів вище */
+}
+
+.white-block {
+  background-color: rgb(236, 239, 249);
+  width: 50%; /* Збільшимо ширину блоку на 5% */
+  height: 50%;
+  padding: 25px; /* Збільшимо відступ всередині блоку */
+  position: absolute;
+  bottom: 150px; /* Підніміть блок на 20 пікселів вище */
+  right: 0;
 }
 
 
