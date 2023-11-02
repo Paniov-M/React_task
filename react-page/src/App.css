@@ -148,24 +148,37 @@ img {
   }
 }
 
-.gray-block {
-  background-color: rgb(154, 150, 159);
-  width: 50%; /* Збільшимо ширину блоку на 5% */
-  height: 50%;
+.gray-block, .white-block {
+  width: 600px;
+  height: 400px;
   padding: 25px; /* Збільшимо відступ всередині блоку */
   position: absolute;
-  bottom: 150px; /* Підніміть блок на 20 пікселів вище */
+  bottom: 90px; /* Підніміть блок на 20 пікселів вище */
+  border-radius: 20px; /* Встановіть бажане значення радіусу обрізання */
+}
+
+.gray-block {
+  background-color: rgb(193, 191, 195);
+  left: 10px;
 }
 
 .white-block {
   background-color: rgb(236, 239, 249);
-  width: 50%; /* Збільшимо ширину блоку на 5% */
-  height: 50%;
-  padding: 25px; /* Збільшимо відступ всередині блоку */
-  position: absolute;
-  bottom: 150px; /* Підніміть блок на 20 пікселів вище */
-  right: 0;
+  right: 20px; /* Додамо відступ справа */
 }
+
+.cash-machine {
+  width: 300px;
+  height: 200px;
+  margin: auto; /* Вирівняйте по центру по горизонталі */
+  position: relative; /* Встановіть позицію relative для можливості вирівнювання по вертикалі */
+  top: 40%; /* Зсуньте вниз на половину висоти блоку */
+  transform: translateY(-50%); /* Здійсніть трансформацію, щоб вирівняти по вертикалі */
+}
+
+
+
+
 
 
 
