@@ -39,7 +39,7 @@
 }
 
 .header {
-  background-color: rgb(189, 189, 245);
+  background-color: rgb(220, 220, 246);
   color: blue;
   display: flex;
   justify-content: space-between;
@@ -48,26 +48,20 @@
   font-size: 20px; /* Змінюємо розмір шрифту */
 }
 
-/* Загальні стилі для "UA | EN" */
+/* Стилі для контейнера "UA | EN" */
 .right-align {
-  text-align: right;
-  font-size: 16px; /* Змінюємо розмір шрифту */
-  color: blue; /* Змінюємо колір тексту */
+  display: flex;
+  align-items: center;
 }
 
-/* Виділяємо "UA" жирним шрифтом */
 .right-align .bold {
   font-weight: bold;
 }
 
-/* Для "UA | EN" на малих екранах */
+/* Додаткові стилі для UA | EN на малих екранах */
 @media (max-width: 768px) {
   .right-align {
-    text-align: center; /* Вирівнюємо текст по центру */
-  }
-
-  .right-align .bold {
-    font-weight: normal; /* Знімаємо жирний шрифт */
+    justify-content: center; /* Вирівнюємо текст по центру на малих екранах */
   }
 }
 
@@ -82,16 +76,13 @@
 
 .best-text {
   font-size: 25px; /* Змінюємо розмір шрифту для "Best" */
-  margin-right: 10px; /* Додаємо зазор між "Best" і "Bank" */
+  margin-right: 1px; /* Додаємо зазор між "Best" і "Bank" */
   font-weight: bold;
 }
 
-.bank-text {
-  font-size: 11px; /* Змінюємо розмір шрифту для "Bank" */
-}
-
 .best-bank {
-  margin-right: 550px; /* Додайте бажаний відступ вправо */
+  font-size: 11px; /* Змінюємо розмір шрифту для "Bank" */
+  margin-top: -11px; /* Піднімаємо "Bank" вище на 10 пікселів */
 }
 
 .bold {
@@ -99,14 +90,11 @@
 }
 
 .deposit {
-  position: absolute; /* Встановлюємо позицію абсолютною */
-  bottom: 550px; /* Розташовуємо внизу блока (нижче інших елементів) */
-  left: 0; /* Вирівнюємо ліворуч */
-  color: blue; /* Змінюємо колір тексту */
+  color: blue;
   font-weight: bold;
-  font-size: 25px; /* Змінюємо розмір шрифту */
-  left: 20px; /* Додамо відступ зліва */
+  font-size: 25px;
 }
+
 
 img {
   width: 20px; /* Задайте бажаний розмір для вашої картинки */
@@ -115,17 +103,16 @@ img {
 
 .phone {
   display: flex;
-  align-items: center; /* Вирівнюємо центрально по горизонталі */
-  margin-left: 10px; /* Додайте бажаний відступ між текстом та зображенням */
+  align-items: center;
+  margin-left: 10px;
 }
 
 .phone img {
-  max-width: 100%; /* Робимо зображення телефону адаптивним до ширини батьківського блока */
+  max-width: 100%;
 }
 
-/* Для тексту номеру телефону */
 .phone .phone-number {
-  font-size: 16px; /* Задайте бажаний розмір шрифту */
+  font-size: 16px;
 }
 
 /* Для блока тексту і зображення на малих екранах */
@@ -148,23 +135,39 @@ img {
   }
 }
 
-.gray-block, .white-block {
-  width: 600px;
-  height: 400px;
-  padding: 25px; /* Збільшимо відступ всередині блоку */
-  position: absolute;
-  bottom: 90px; /* Підніміть блок на 20 пікселів вище */
-  border-radius: 20px; /* Встановіть бажане значення радіусу обрізання */
+.blocks {
+  margin-top: auto; /* Встановлюємо блоки і "внесення коштів" внизу контейнера */
+}
+
+.deposit {
+  font-size: 25px; /* Змінюємо розмір шрифту */
+  color: blue; /* Змінюємо колір тексту */
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-container {
+  margin: 10px;
+  flex: 1;
 }
 
 .gray-block {
   background-color: rgb(193, 191, 195);
-  left: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 25px;
 }
 
 .white-block {
   background-color: rgb(236, 239, 249);
-  right: 20px; /* Додамо відступ справа */
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 25px;
 }
 
 .cash-machine {

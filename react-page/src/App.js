@@ -1,12 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Header from './Components/Header'; // Імпортуємо Header з папки Components
+import Header from './Components/Header';
+import Deposit from './Components/Deposit';
+import Blocks from './Components/Blocks';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Deposit />
+      <Blocks />
     </div>
   );
 }
