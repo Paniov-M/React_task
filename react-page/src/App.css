@@ -38,14 +38,23 @@
   }
 }
 
-.header {
-  background-color: rgb(220, 220, 246);
-  color: blue;
+.center {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Для всього зовнішнього контейнера */
+.header {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(220, 220, 246);
+  color: blue;
   padding: 10px;
-  font-size: 20px; /* Змінюємо розмір шрифту */
+  font-size: 20px;
 }
 
 /* Стилі для контейнера "UA | EN" */
@@ -57,6 +66,13 @@
 .right-align .bold {
   font-weight: bold;
 }
+
+/* Для телефонної частини */
+.center.phone {
+  display: flex;
+  align-items: center;
+}
+
 
 /* Додаткові стилі для UA | EN на малих екранах */
 @media (max-width: 768px) {
@@ -81,18 +97,22 @@
 }
 
 .best-bank {
-  font-size: 11px; /* Змінюємо розмір шрифту для "Bank" */
-  margin-top: -11px; /* Піднімаємо "Bank" вище на 10 пікселів */
+  font-size: 11px;
+  position: relative;
+  top: -10px; /* Зсуваємо "Bank" вище на 10 пікселів */
 }
+
 
 .bold {
   font-weight: bold;
 }
 
 .deposit {
+  font-size: 25px;
   color: blue;
   font-weight: bold;
-  font-size: 25px;
+  margin-top: 20px; /* Зсуваємо текст "Внесення коштів" вниз на 20 пікселів */
+  text-align: left; /* Вирівнюємо текст зліва сторінки */
 }
 
 
@@ -135,10 +155,6 @@ img {
   }
 }
 
-.blocks {
-  margin-top: auto; /* Встановлюємо блоки і "внесення коштів" внизу контейнера */
-}
-
 .deposit {
   font-size: 25px; /* Змінюємо розмір шрифту */
   color: blue; /* Змінюємо колір тексту */
@@ -146,13 +162,20 @@ img {
 
 .blocks {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Центруємо блоки горизонтально */
+  align-items: center; /* Центруємо блоки вертикально */
+  margin-top: 25px; /* Зсуваємо блоки вниз на 20 пікселів після внесення коштів */
 }
 
 .block-container {
   margin: 10px;
-  flex: 1;
+  width: 800px; /* Змінюйте потрібну ширину */
+  height: 400px; /* Змінюйте потрібну висоту */
+  display: flex;
+  justify-content: center; /* Центруємо блоки горизонтально в межах контейнера */
+  align-items: center; /* Центруємо блоки вертикально в межах контейнера */
 }
+
 
 .gray-block {
   background-color: rgb(193, 191, 195);

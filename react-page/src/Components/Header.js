@@ -11,15 +11,17 @@ function Header() {
           <span className="best-text">Best</span>
           <span className="best-bank">Bank</span>
         </div>
-        <div className="phone">
-          <FaPhone size={15} />
-          <span className="phone-number">800 002 03 14</span>
-        </div>
-        <div className="right-align">
-          <span className="bold">UA | EN</span>
-        </div>
+      </div>
+      <div className="center phone">
+        <FaPhone size={15} />
+        <span className="phone-number">800 002 03 14</span>
+      </div>
+      <div className="right-align">
+        <span className="bold">UA</span>
+        <span>|EN</span>
       </div>
     </div>
   );
 }
+
 export default Header;
