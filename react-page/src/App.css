@@ -202,14 +202,52 @@ img {
   transform: translateY(-50%); /* Здійсніть трансформацію, щоб вирівняти по вертикалі */
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Спільні стилі для овальних кнопок */
+.oval-button {
+  display: inline-block; /* або inline-flex */
+  width: 300px;
+  height: 70px;
+  border-radius: 35px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s, background-color 0.3s;
+  border: 2px solid blue;
+}
+
+/* Стилі для першої кнопки */
+.oval-button.first-button {
+  /* Біла середина кнопки */
+  background-color: white;
+  color: blue; /* Синій текст */
+}
+
+/* Стилі для другої кнопки */
+.oval-button.second-button {
+  background-color: blue;
+  color: white; /* Синій текст */
+}
+
+/* Стилі для третьої кнопки */
+.oval-button.third-button {
+  border: 2px solid rgb(193, 191, 195);
+  background-color: white; /* Біла середина кнопки */
+  color: rgb(193, 191, 195); /* Сірий текст */
+}
 
 
-
-
-
-
-
-
-
-
-
+/* Стилі для четвертої кнопки */
+.oval-button.fourth-button{
+  border: 2px solid rgb(193, 191, 195);
+  background-color: rgb(193, 191, 195); /* Біла середина кнопки */
+  color: white; /* Сірий текст */
+}
