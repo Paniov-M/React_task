@@ -1,0 +1,80 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Для всього зовнішнього контейнера */
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(220, 220, 246);
+    color: blue;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  /* Стилі для контейнера "UA | EN" */
+  .right-align {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-align .bold {
+    font-weight: bold;
+  }
+  
+  /* Для телефонної частини */
+  .center.phone {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text-container {
+    display: flex;
+    align-items: center; /* Розміщуємо елементи по вертикалі по центру */
+  }
+  
+  .best-text {
+    font-size: 25px; /* Змінюємо розмір шрифту для "Best" */
+    margin-right: 1px; /* Додаємо зазор між "Best" і "Bank" */
+    font-weight: bold;
+  }
+  
+  .best-bank {
+    font-size: 11px;
+    position: relative;
+    top: -10px; /* Зсуваємо "Bank" вище на 10 пікселів */
+  }
+    
+  .phone .phone-number {
+    font-size: 16px;
+  }
+  
+  /* Для блока тексту і зображення на малих екранах */
+  @media (max-width: 768px) {
+    .text-container {
+      flex-direction: column; /* Змінюємо напрямок flex-контейнера на вертикальний */
+      align-items: center; /* Вирівнюємо центрально по горизонталі */
+    }
+  
+    .phone {
+      text-align: center; /* Вирівнюємо текст по центру */
+    }
+  
+    .phone .phone-number {
+      font-size: 14px; /* Задайте бажаний розмір шрифту для малих екранів */
+    }
+  }
+
+    /* Додаткові стилі для UA | EN на малих екранах */
+    @media (max-width: 768px) {
+        .right-align {
+          justify-content: center; /* Вирівнюємо текст по центру на малих екранах */
+        }
+      }
+      
+  

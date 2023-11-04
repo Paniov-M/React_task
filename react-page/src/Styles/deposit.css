@@ -1,0 +1,7 @@
+.deposit {
+    font-size: 25px;
+    color: blue;
+    font-weight: bold;
+    margin-top: 20px; /* Зсуваємо текст "Внесення коштів" вниз на 20 пікселів */
+    text-align: left; /* Вирівнюємо текст зліва сторінки */
+  }

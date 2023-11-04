@@ -1,0 +1,38 @@
+.centered-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: 25%; /* Збільшення розміру по ширині */
+    height: auto; /* Автоматична висота, щоб зберегти співвідношення сторін */
+    margin-top: 50px;
+  }
+  
+.image-container {
+    position: relative;
+}
+  
+.image-text {
+    position: absolute;
+    top: -40px; /* Зсув тексту вгору над фотографією */
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    z-index: 5;
+}
+  
+.image-description {
+    color: rgba(0, 0, 0, 0.5);
+}
+  
+@media (max-width: 768px) {
+    .centered-image {
+      width: 50%; /* Збільшення розміру по ширині на менших екранах */
+    }
+  
+    .image-text,.image-description  {
+      font-size: 14px; /* Зменшення розміру шрифту на менших екранах */
+    }
+}

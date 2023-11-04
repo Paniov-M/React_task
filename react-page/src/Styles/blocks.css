@@ -1,0 +1,37 @@
+
+.blocks {
+    display: flex;
+    justify-content: center; /* Центруємо блоки горизонтально */
+    align-items: center; /* Центруємо блоки вертикально */
+    margin-top: 25px; /* Зсуваємо блоки вниз на 20 пікселів після внесення коштів */
+  }
+  
+  .block-container {
+    margin: 10px;
+    width: 800px; /* Змінюйте потрібну ширину */
+    height: 400px; /* Змінюйте потрібну висоту */
+    display: flex;
+    justify-content: center; /* Центруємо блоки горизонтально в межах контейнера */
+    align-items: center; /* Центруємо блоки вертикально в межах контейнера */
+  }
+  
+  .gray-block {
+    background-color: rgb(193, 191, 195);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 25px;
+    position: relative;
+  }
+
+  .white-block {
+    background-color: rgb(236, 239, 249);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 25px;
+    position: relative;
+  }
