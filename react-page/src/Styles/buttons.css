@@ -29,9 +29,20 @@
     color: blue; /* Синій текст */
   }
   
+  .oval-button.first-button:hover {
+    background-color: blue;
+    color: white;
+  }
+  
+  /* Стилі для другої кнопки */
   .oval-button.second-button {
     background-color: blue;
-    color: white; 
+    color: white;
+  }
+  
+  .oval-button.second-button:hover {
+    background-color: white;
+    color: blue;
   }
   
   .oval-button.third-button {
