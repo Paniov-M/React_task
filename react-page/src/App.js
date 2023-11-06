@@ -3,7 +3,7 @@ import './App.css';
 import Header from './Components/Header';// Імпортуємо компонент Header
 import Deposit from './Components/Deposit';
 import Blocks from './Components/Blocks';
-import Buttons from './Components/Buttons'; // Імпортуємо компонент Buttons
+import Buttons from './Components/Buttons'; 
 
 function App() {
   return (

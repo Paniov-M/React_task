@@ -66,14 +66,14 @@
     }
   
     .phone .phone-number {
-      font-size: 14px; /* Задайте бажаний розмір шрифту для малих екранів */
+      font-size: 14px; /* розмір шрифту для малих екранів */
     }
   }
 
     /* Додаткові стилі для UA | EN на малих екранах */
     @media (max-width: 768px) {
         .right-align {
-          justify-content: center; /* Вирівнюємо текст по центру на малих екранах */
+          justify-content: center; /* Вирівнюємо текст по центру*/
         }
       }
       

@@ -1,3 +1,5 @@
+/* Стилі для тексту */
+
 .white-block-text {
     text-align: left; /* Вирівнюємо текст праворуч */
     font-size: 17px; /* Розмір шрифту для першого тексту */
@@ -8,21 +10,21 @@
   }
   
   .top {
-    text-align: left; /* Вирівнюємо текст праворуч */
-    margin-top: -15px; /* Підняти текст вгору на 20 пікселів */
-    margin-left: 20px; /* Зсунути текст праворуч на 10 пікселів */
-    color: rgb(150, 150, 151); /* Змінити колір тексту на червоний */
-    font-size: 17px; /* Розмір шрифту для другого тексту */
+    text-align: left; 
+    margin-top: -15px; 
+    margin-left: 20px; 
+    color: rgb(150, 150, 151); 
+    font-size: 17px; 
   }
   
   .center1-text {
     font-size: 20px;
-    text-align: left; /* Вирівнюємо текст по центру */
-    margin-left: 40px; /* Зсунути текст праворуч на 10 пікселів */
-    margin-top: -85px; /* Підняти текст вгору на 20 пікселів */
-    font-weight: bold; /* Жирний текст для першого тексту */
-    font-size: 17px; /* Розмір шрифту для другого тексту */
-    color: rgb(94, 94, 99); /* Змінити колір тексту на червоний */
+    text-align: left; 
+    margin-left: 40px; 
+    margin-top: -85px; 
+    font-weight: bold; 
+    font-size: 17px; 
+    color: rgb(94, 94, 99); 
     position: absolute;
     top: 50%; /* Розміщуємо текст по вертикалі в центрі */
     left: 0;
@@ -43,16 +45,16 @@
   
   .center2-text {
     font-size: 20px;
-    text-align: right; /* Вирівнюємо текст по центру */
-    margin-top: -90px; /* Підняти текст вгору на 20 пікселів */
+    text-align: right; 
+    margin-top: -90px; 
     margin-right: 40px;
-    font-size: 25px; /* Розмір шрифту для другого тексту */
-    color: rgb(94, 94, 99); /* Змінити колір тексту на червоний */
+    font-size: 25px; 
+    color: rgb(94, 94, 99); 
     position: absolute;
-    top: 50%; /* Розміщуємо текст по вертикалі в центрі */
+    top: 50%; 
     left: 0;
     right: 0;
-    transform: translateY(-50%); /* Вирівнюємо по вертикалі за допомогою трансформації */
+    transform: translateY(-50%); 
   }
   
   @media (max-width: 768px) {
@@ -70,17 +72,17 @@
   }
   
   .center3-text {
-    text-align: left; /* Вирівнюємо текст по центру */
-    margin-left: 40px; /* Зсунути текст праворуч на 10 пікселів */
-    margin-top: -35px; /* Підняти текст вгору на 20 пікселів */
-    font-weight: bold; /* Жирний текст для першого тексту */
-    font-size: 17px; /* Розмір шрифту для другого тексту */
-    color: red; /* Змінити колір тексту на червоний */
+    text-align: left; 
+    margin-left: 40px; 
+    margin-top: -35px; 
+    font-weight: bold;
+    font-size: 17px; 
+    color: red; 
     position: absolute;
-    top: 50%; /* Розміщуємо текст по вертикалі в центрі */
+    top: 50%; 
     left: 0;
     right: 0;
-    transform: translateY(-50%); /* Вирівнюємо по вертикалі за допомогою трансформації */
+    transform: translateY(-50%); 
   }
   
   .center3-text::after {
@@ -95,16 +97,16 @@
   }
   
   .center4-text {
-    text-align: right; /* Вирівнюємо текст по центру */
-    margin-top: -30px; /* Підняти текст вгору на 20 пікселів */
+    text-align: right; 
+    margin-top: -30px; 
     margin-right: 40px;
-    font-size: 20px; /* Розмір шрифту для другого тексту */
+    font-size: 20px; 
     color: red; /* Змінити колір тексту на червоний */
     position: absolute;
-    top: 50%; /* Розміщуємо текст по вертикалі в центрі */
+    top: 50%; 
     left: 0;
     right: 0;
-    transform: translateY(-50%); /* Вирівнюємо по вертикалі за допомогою трансформації */
+    transform: translateY(-50%); 
   }
   
   @media (max-width: 768px) {
@@ -120,118 +122,117 @@
   }
   
   .center5-text {
-    text-align: left; /* Вирівнюємо текст по центру */
-    margin-left: 40px; /* Зсунути текст праворуч на 10 пікселів */
-    font-weight: bold; /* Жирний текст для першого тексту */
-    font-size: 17px; /* Розмір шрифту для другого тексту */
-    color: rgb(193, 191, 195); /* Змінити колір тексту на червоний */
+    text-align: left; 
+    margin-left: 40px; 
+    font-weight: bold; 
+    font-size: 17px; 
+    color: rgb(193, 191, 195); 
     position: absolute;
-    top: 50%; /* Розміщуємо текст по вертикалі в центрі */
+    top: 50%; 
     left: 0;
     right: 0;
-    transform: translateY(-50%); /* Вирівнюємо по вертикалі за допомогою трансформації */
+    transform: translateY(-50%); 
   }
   
   .center5-text::after {
     content: '';
     position: absolute;
-    bottom: -10px; /* Зсув лінії вниз */
+    bottom: -10px; 
     left: 0;
     right: 0;
     height: 1px;
-    background-color: #b8b6b6; /* Колір лінії */
+    background-color: #b8b6b6; 
     width: 94%;
   }
   
   .center6-text {
-    text-align: right; /* Вирівнюємо текст по центру */
+    text-align: right; 
     margin-right: 40px;
-    font-size: 20px; /* Розмір шрифту для другого тексту */
-    color: rgb(193, 191, 195); /* Змінити колір тексту на червоний */
+    font-size: 20px; 
+    color: rgb(193, 191, 195); 
     position: absolute;
-    top: 50%; /* Розміщуємо текст по вертикалі в центрі */
+    top: 50%; 
     left: 0;
     right: 0;
-    transform: translateY(-50%); /* Вирівнюємо по вертикалі за допомогою трансформації */
+    transform: translateY(-50%); 
   }
   
   @media (max-width: 768px) {
     .center5-text {
       font-size: 14px; /* Новий розмір шрифту для екранів менше 768px */
-      margin-left: 20px; /* Ваші інші зміни для цього класу */
+      margin-left: 20px; /* Відступ на 20 пікселів */
     }
   
     .center6-text {
-      font-size: 16px; /* Новий розмір шрифту для екранів менше 768px */
-      margin-right: 20px; /* Ваші інші зміни для цього класу */
+      font-size: 16px; 
+      margin-right: 20px; 
     }
   }
   
   .center7-text {
-    text-align: left; /* Вирівнюємо текст по центру */
-    margin-left: 40px; /* Зсунути текст праворуч на 10 пікселів */
-    font-weight: bold; /* Жирний текст для першого тексту */
-    font-size: 17px; /* Розмір шрифту для другого тексту */
-    color: rgb(193, 191, 195); /* Змінити колір тексту на червоний */
+    text-align: left; 
+    margin-left: 40px; 
+    font-weight: bold; 
+    font-size: 17px; 
+    color: rgb(193, 191, 195); 
     position: absolute;
-    top: 60%; /* Розміщуємо текст по вертикалі в центрі */
+    top: 60%; 
     left: 0;
     right: 0;
-    transform: translateY(-50%); /* Вирівнюємо по вертикалі за допомогою трансформації */
+    transform: translateY(-50%); 
   }
   
   .center7-text::after {
     content: '';
     position: absolute;
-    bottom: -10px; /* Зсув лінії вниз */
+    bottom: -10px; 
     left: 0;
     right: 0;
     height: 1px;
-    background-color: #b8b6b6; /* Колір лінії */
+    background-color: #b8b6b6; 
     width: 94%;
   }
   
   .center8-text {
-    text-align: right; /* Вирівнюємо текст по центру */
+    text-align: right; 
     margin-right: 40px;
-    font-size: 20px; /* Розмір шрифту для другого тексту */
-    color: rgb(193, 191, 195); /* Змінити колір тексту на червоний */
+    font-size: 20px; 
+    color: rgb(193, 191, 195); 
     position: absolute;
-    top: 60%; /* Розміщуємо текст по вертикалі в центрі */
+    top: 60%; 
     left: 0;
     right: 0;
-    transform: translateY(-50%); /* Вирівнюємо по вертикалі за допомогою трансформації */
+    transform: translateY(-50%); 
   }
   
   @media (max-width: 768px) {
-    /* Для екранів менше 768px ви можете змінити стилі, наприклад: */
     .center7-text {
-      font-size: 14px; /* Зміна розміру шрифту для малих екранів */
-      margin-left: 20px; /* Зміна відступу для малих екранів */
+      font-size: 14px; 
+      margin-left: 20px; 
     }
   
     .center8-text {
-      font-size: 16px; /* Зміна розміру шрифту для малих екранів */
-      margin-right: 20px; /* Зміна відступу для малих екранів */
+      font-size: 16px; 
+      margin-right: 20px; 
     }
   }
   
   .bottom-text {
-    text-align: left; /* Вирівнюємо текст праворуч */
-    font-size: 23px; /* Розмір шрифту для першого тексту */
+    text-align: left; 
+    font-size: 23px; 
     position: absolute;
-    bottom: 0; /* Розмістити текст знизу */
-    bottom: 40px; /* Додатковий відступ від нижнього краю */
-    margin-left: 20px; /* Зсунути текст праворуч на 10 пікселів */
+    bottom: 0; 
+    bottom: 40px; 
+    margin-left: 20px; 
   }
   
   .bottom {
-    text-align: left; /* Вирівнюємо текст праворуч */
-    font-size: 23px; /* Розмір шрифту для першого тексту */
+    text-align: left; 
+    font-size: 23px; 
     position: absolute;
     bottom: 0; /* Розмістити текст знизу */
     bottom: 15px; /* Додатковий відступ від нижнього краю */
-    margin-left: 20px; /* Зсунути текст праворуч на 10 пікселів */
+    margin-left: 20px; 
   }
   
   
